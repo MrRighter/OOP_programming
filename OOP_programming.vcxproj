@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="First practical work\Task1_%28a_b_v%29.cpp" />
     <ClCompile Include="First practical work\Task2.cpp" />
+    <ClCompile Include="First practical work\Task3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

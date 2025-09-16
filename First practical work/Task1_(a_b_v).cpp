@@ -51,10 +51,10 @@ int main() {
         int total_days = total_months * DAYS_IN_MONTH; // общий возраст в днях
 
         cout << left
-            << setw(15) << surnames[i]
-            << setw(15) << names[i]
-            << setw(15) << total_months
-            << setw(15) << total_days
+            << setw(20) << surnames[i]
+            << setw(20) << names[i]
+            << setw(20) << total_months
+            << setw(20) << total_days
             << endl;
     }
 

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Task1_%28from_09.09.25%29_%281_a_b_v%29.cpp">
+    <ClCompile Include="First practical work\Task1_%281_a_b_v%29.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

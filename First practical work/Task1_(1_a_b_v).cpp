@@ -38,10 +38,11 @@ int main() {
 
     // вывод таблицы
     cout << "\nРезультат:\n";
-    cout << left << setw(15) << "Фамилия"
-        << setw(15) << "Имя"
-        << setw(15) << "Возраст (мес)"
-        << setw(15) << "Возраст (дней)"
+    cout << left
+        << setw(20) << "Фамилия"
+        << setw(20) << "Имя"
+        << setw(20) << "Возраст (мес)"
+        << setw(20) << "Возраст (дней)"
         << endl;
 
     // вычисление и вывод результатов для каждого пользователя
@@ -49,7 +50,8 @@ int main() {
         int total_months = years[i] * 12 + months[i]; // общий возраст в месяцах
         int total_days = total_months * DAYS_IN_MONTH; // общий возраст в днях
 
-        cout << left << setw(15) << surnames[i]
+        cout << left
+            << setw(15) << surnames[i]
             << setw(15) << names[i]
             << setw(15) << total_months
             << setw(15) << total_days

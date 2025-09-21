@@ -1,18 +1,18 @@
-//#include <iostream>
-//#include <windows.h>
-//using namespace std;
-//
-//int main() {
-//    SetConsoleCP(1251);
-//    SetConsoleOutputCP(1251);
-//    setlocale(LC_ALL, "Russian");
-//
-//    int x = 2008;
-//    int *ptr = &x;
-//    int y = 17;
-//    cout << "Èñõîäíîå çíà÷åíèå ïåðåìåííîé: " << x << endl;
-//    *ptr += y;
-//    cout << "Çíà÷åíèå ïîñëå óâåëè÷åíèÿ íà " << y << ": " << x << endl;
-//
-//    return 0;
-//}
+ï»¿#include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    setlocale(LC_ALL, "Russian");
+
+    int x = 2008;
+    int *ptr = &x;
+    int y = 17;
+    cout << "Ð˜ÑÑ…Ð¾Ð´Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ð¾Ð¹: " << x << endl;
+    *ptr += y;
+    cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð¿Ð¾ÑÐ»Ðµ ÑƒÐ²ÐµÐ»Ð¸Ñ‡ÐµÐ½Ð¸Ñ Ð½Ð° " << y << ": " << x << endl;
+
+    return 0;
+}

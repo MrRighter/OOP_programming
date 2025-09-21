@@ -7,43 +7,33 @@ int main() {
     SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "Russian");
 
-    // Объявляем переменные разных типов
-    int integerVar = 10;
-    double doubleVar = 3.14;
-    char charVar = 'A';
+    int int_var = 17;
+    double double_var = 3.14;
+    char char_var = 'K';
 
-    // Создаем указатели на эти переменные
-    int* intPtr = &integerVar;
-    double* doublePtr = &doubleVar;
-    char* charPtr = &charVar;
+    int *int_ptr = &int_var;
+    double *double_ptr = &double_var;
+    char *char_ptr = &char_var;
 
-    // Используем арифметику указателей для вычисления размера переменных
-    // Для этого создаем второй указатель того же типа и вычисляем разницу адресов
+    // вычисляем размеры через арифметику указателей
+    size_t int_size = reinterpret_cast<char*>(int_ptr + 1) - reinterpret_cast<char*>(int_ptr);
+    size_t double_size = reinterpret_cast<char*>(double_ptr + 1) - reinterpret_cast<char*>(double_ptr);
+    size_t char_size = (char_ptr + 1) - char_ptr; // для char преобразование не нужно
 
-    // Для целочисленной переменной
-    int* intPtr2 = intPtr + 1;
-    size_t intSize = reinterpret_cast<char*>(intPtr2) - reinterpret_cast<char*>(intPtr);
+    cout << "~ Целочисленная переменная" << endl;
+    cout << "Значение: " << int_var << endl;
+    cout << "Адрес: " << int_ptr << endl;
+    cout << "Размер: " << int_size << " байт\n" << endl;
 
-    // Для действительной переменной
-    double* doublePtr2 = doublePtr + 1;
-    size_t doubleSize = reinterpret_cast<char*>(doublePtr2) - reinterpret_cast<char*>(doublePtr);
+    cout << "~ Действительная переменная" << endl;
+    cout << "Значение: " << double_var << endl;
+    cout << "Адрес: " << double_ptr << endl;
+    cout << "Размер: " << double_size << " байт\n" << endl;
 
-    // Для символьной переменной
-    char* charPtr2 = charPtr + 1;
-    size_t charSize = charPtr2 - charPtr;
-
-    // Выводим результаты
-    cout << "Целочисленная переменная:" << endl;
-    cout << "Адрес: " << intPtr << endl;
-    cout << "Размер: " << intSize << " байт" << endl << endl;
-
-    cout << "Действительная переменная:" << endl;
-    cout << "Адрес: " << doublePtr << endl;
-    cout << "Размер: " << doubleSize << " байт" << endl << endl;
-
-    cout << "Символьная переменная:" << endl;
-    cout << "Адрес: " << reinterpret_cast<void*>(charPtr) << endl;
-    cout << "Размер: " << charSize << " байт" << endl;
+    cout << "~ Символьная переменная" << endl;
+    cout << "Значение: " << char_var << endl;
+    cout << "Адрес: " << reinterpret_cast<void*>(char_ptr) << endl;
+    cout << "Размер: " << char_size << " байт" << endl;
 
     return 0;
 }

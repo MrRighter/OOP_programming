@@ -26,6 +26,8 @@ int main() {
 
 
 
+// !!! ИЛИ !!!
+
 //#include <iostream>
 //#include <string>
 //#include <sstream>

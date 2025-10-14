@@ -1,3 +1,7 @@
+// 3. В строке, которая вводится с клавиатуры, найти количество вхождений буквы, с которой начинается Ваша фамилия.
+// Данная буква должна быть указана в коде программы
+
+
 #include <iostream>
 
 using namespace std;
@@ -5,10 +9,10 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "");
 
-    wchar_t input_string[256]; // буфер для ввода строки
+    wstring input_string;
 
     wcout << L"Введите строку: ";
-    wcin.getline(input_string, 256);
+    wcin >> input_string;
 
     wchar_t target_letter_u = L'Ш';
     wchar_t target_letter_l = L'ш';

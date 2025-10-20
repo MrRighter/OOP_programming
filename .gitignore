@@ -11,16 +11,20 @@
 *.sln.docstates
 .idea
 Hello World
-First practical work/1_Task1_(a_b_v)
-First practical work/1_Task2
-First practical work/1_Task3
+Practical work 1/1_Task1_(a_b_v)
+Practical work 1/1_Task2
+Practical work 1/1_Task3
 Lectures/str_split
-Second practical work/2_Task1_(a_b_v)
-Second practical work/2_Task2
-Third practical work/3_Task1
-Third practical work/3_Task2
-Third practical work/3_Task3
-Third practical work/3_Task4
+Practical work 2/2_Task1_(a_b_v)
+Practical work 2/2_Task2
+Practical work 3/3_Task1
+Practical work 3/3_Task2
+Practical work 3/3_Task3
+Practical work 3/3_Task4
+Practical work 4/4_Task1
+Practical work 4/4_Task2
+Practical work 4/4_Task3
+Practical work 4/4_Task4
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

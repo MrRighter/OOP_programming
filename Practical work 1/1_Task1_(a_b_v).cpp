@@ -50,8 +50,8 @@ int main() {
 
     // вычисление и вывод данных для каждого пользователя
     for (int i = 0; i < USERS_COUNT; ++i) {
-        int total_months = years[i] * 12 + months[i];  // общий возраст в месяцах
-        int total_days = total_months * DAYS_IN_MONTH;  // общий возраст в днях
+        int total_months = years[i] * 12 + months[i]; // общий возраст в месяцах
+        int total_days = total_months * DAYS_IN_MONTH; // общий возраст в днях
 
         wcout << left
             << setw(20) << surnames[i]

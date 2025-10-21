@@ -5,26 +5,20 @@
 
 #include <iostream>
 
-std::string max_num(int num1, int num2)
-{
-    if (num1 > num2)
-    {
+std::string max_num(int num1, int num2) {
+    if (num1 > num2) {
         return "первое число = " + std::to_string(num1);
     }
-    else
-    {
+    else {
         return "второе число = " + std::to_string(num2);
     }
 }
 
-int max_num(const int arr[], int size)
-{
+int max_num(const int arr[], int size) {
     int max_value = arr[0];
 
-    for (int i = 1; i < size; i++)
-    {
-        if (arr[i] > max_value)
-        {
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > max_value) {
             max_value = arr[i];
         }
     }
@@ -32,12 +26,11 @@ int max_num(const int arr[], int size)
     return max_value;
 }
 
-int main()
-{
+int main() {
     // Работа с двумя числами. Первое задание
     int num1, num2;
 
-    std::cout <<  "Введите 1 число: ";
+    std::cout << "Введите 1 число: ";
     std::cin >> num1;
     std::cout << "Введите 2 число: ";
     std::cin >> num2;
@@ -53,8 +46,7 @@ int main()
 
     int arr[size];
     std::cout << "Введите " << size << " элементов массива: " << std::endl;
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++) {
         std::cin >> arr[i];
     }
 

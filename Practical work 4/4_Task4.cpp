@@ -5,14 +5,12 @@
 
 #include <iostream>
 
-void input_array(int arr[], int &size)
-{
+void input_array(int arr[], int& size) {
     std::cout << "Введите количество элементов: ";
     std::cin >> size;
 
     std::cout << "Введите " << size << " элементов массива:" << std::endl;
-    for (int i = 0; i < size; i++)
-    {
+    for (int i = 0; i < size; i++) {
         std::cout << "Элемент " << i + 1 << ": ";
         std::cin >> arr[i];
     }

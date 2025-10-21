@@ -5,22 +5,18 @@
 
 #include <iostream>
 
-std::string max2(int num1, int num2)
-{
-    if (num1 > num2)
-    {
+std::string max2(int num1, int num2) {
+    if (num1 > num2) {
         return "первое число = " + std::to_string(num1);
     }
-    else
-    {
+    else {
         return "второе число = " + std::to_string(num2);
     }
 }
 
-int main()
-{
+int main() {
     int num1, num2;
-    std::cout <<  "Введите 1 число: ";
+    std::cout << "Введите 1 число: ";
     std::cin >> num1;
     std::cout << "Введите 2 число: ";
     std::cin >> num2;

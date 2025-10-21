@@ -30,11 +30,11 @@ int main() {
         if ((input_login == user1_login and input_password == user1_password) or
             (input_login == user2_login and input_password == user2_password)) {
             cout << "Успешный вход!" << endl;
-            break;  // выходим из цикла при успехе
+            break; // выходим из цикла при успехе
         }
         else {
             cout << "Ошибка! Неверный логин или пароль.\n" << endl;
-            count--;  // уменьшаем количество попыток
+            count--; // уменьшаем количество попыток
         }
     }
 

@@ -25,6 +25,6 @@ int main() {
     }
 
     wcout << L"Количество вхождений: " << count << endl;
-    
+
     return 0;
 }

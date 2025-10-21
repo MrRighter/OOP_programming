@@ -5,22 +5,19 @@
 
 #include <iostream>
 
-void input_numbers(int &num1, int &num2)
-{
+void input_numbers(int& num1, int& num2) {
     std::cout << "Введите первое число: ";
     std::cin >> num1;
     std::cout << "Введите второе число: ";
     std::cin >> num2;
 }
 
-int max2(int a, int b)
-{
+int max2(int a, int b) {
     // тернарный оператор
-    return (a > b) ? a : b;  //условие ? значение_если_истина : значение_если_ложь
+    return (a > b) ? a : b; //условие ? значение_если_истина : значение_если_ложь
 }
 
-int main()
-{
+int main() {
     int x, y;
     input_numbers(x, y);
     std::cout << "Наибольшее число: " << max2(x, y) << std::endl;

@@ -40,7 +40,8 @@ int main() {
             // для первой строки просто запоминаем ее минимум
             minmax_value = row_min;
             first_minimum = false;
-        } else {
+        }
+        else {
             // для последующих строк сравниваем с текущим минимаксом
             if (row_min > minmax_value) {
                 minmax_value = row_min;

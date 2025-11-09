@@ -10,7 +10,6 @@
 *.userosscache
 *.sln.docstates
 .idea
-.gitignore
 Hello World
 Practical work 1/1_Task1_(a_b_v)
 Practical work 1/1_Task2

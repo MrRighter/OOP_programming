@@ -5,33 +5,34 @@
 
 
 #include <iostream>
-#include <vector>
 
 int main() {
     int count;
     std::cout << "Введите количество чисел:" << std::endl;
     std::cin >> count;
 
-    std::vector<int> nums_vector;
+    int* arr = new int[count];
+    int* current = arr;
 
     std::cout << "Введите " << count << " элементов:" << std::endl;
     for (int i = 0; i < count; i++) {
-        int num;
-        std::cin >> num;
-        nums_vector.push_back(num);
+        std::cin >> *current;
+        current++;
     }
 
-    int max_num = nums_vector[0];
-    int* pmn = &max_num;
-    for (int i = 0; i < count; i++) {
-        int a = nums_vector[i];
-        int* pa = &a;
-        if (*pa > *pmn) {
-            *pmn = *pa;
+    int* max_ptr = arr; // указатель на текущий максимум
+    current = arr + 1; // начинаем со второго элемента
+
+    for (int i = 1; i < count; i++) {
+        if (*current > *max_ptr) {
+            max_ptr = current;
         }
+        current++;
     }
 
-    std::cout << "Максимальное число вектора: " << max_num << std::endl;
+    std::cout << "Максимальное число вектора: " << *max_ptr << std::endl;
+
+    delete[] arr;
 
     return 0;
 }

@@ -18,10 +18,7 @@ private:
     int height;
 
 public:
-    ConiferousTrees(
-        std::string c_name, int c_age,
-        std::string c_color, int c_height
-    )
+    ConiferousTrees(std::string c_name, int c_age, std::string c_color, int c_height)
         : name(std::move(c_name)), age(c_age), color(std::move(c_color)), height(c_height) {
     }
 
@@ -33,24 +30,23 @@ public:
         : name("None"), age(c_age), color("None"), height(c_height) {
     }
 
-    void print_data() {
+    void print_data() const {
         std::cout << "Name: " << name << std::endl;
         std::cout << "Age: " << age << " y.o." << std::endl;
         std::cout << "Color: " << color << std::endl;
-        std::cout << "Height: " << height << " m" << std::endl;
+        std::cout << "Height: " << height << " m" << std::endl << std::endl;
     }
 
-    void print_data(bool short_format) {
+    void print_data(bool short_format) const {
         if (short_format) {
-            std::cout << name << " (" << age << " years, " << height << "m)";
+            std::cout << name << " (" << age << " years, " << height << "m)" << std::endl << std::endl;
         }
         else {
             print_data();
         }
-        std::cout << std::endl;
     }
 
-    bool is_young(int max_age) {
+    [[nodiscard]] bool is_young(int max_age) const {
         return age < max_age;
     }
 };
@@ -60,23 +56,18 @@ public:
 int main() {
     ConiferousTrees Spruce("Crazy Spruce", 52, "Dark green", 20);
     Spruce.print_data();
-    std::cout << std::endl;
 
     ConiferousTrees Fir("Crazy Fir", "Blue");
     Fir.print_data();
-    std::cout << std::endl;
 
     ConiferousTrees None1(67, 31);
     None1.print_data();
-    std::cout << std::endl;
 
     std::cout << "Original format:" << std::endl;
     Spruce.print_data();
-    std::cout << std::endl;
 
     std::cout << "Short format:" << std::endl;
     Spruce.print_data(true);
-    std::cout << std::endl;
 
     std::cout << "Is the 'Spruce' young?: " << std::boolalpha << Spruce.is_young(200) << std::endl;
 

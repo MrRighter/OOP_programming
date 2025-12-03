@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     setlocale(0, "");
-    string str = "Hello, World from CLion!";
+    string str = "'Hello, World' from CLion!";
 
     size_t pos = 0;
     size_t pos1;
